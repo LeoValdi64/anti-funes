@@ -168,7 +168,7 @@ export function Bonfire({ isActive = true, isBurning = false, intensity = 1 }: B
   const effectiveIntensity = isBurning ? Math.min(intensity * 1.5, 2) : intensity;
 
   return (
-    <div className="relative w-full h-64 overflow-visible">
+    <div className="relative w-full h-64 overflow-x-clip overflow-y-visible">
       {/* Glow effect */}
       <motion.div
         className="absolute left-1/2 bottom-0 -translate-x-1/2"
